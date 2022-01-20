@@ -180,3 +180,18 @@ int main(int argc, string argv[])
         printf("hello, world\n");
     }
 }
+
+line 194 is telling is that we can index specific letters inide this argv array and print the letter on a new line
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+int main(int argc, string argv[])
+{
+    if (argc == 2)
+    {
+        for (int i = 0, n = strlen(argv[1]); i < n; i++)
+        {
+            printf("%c\n", argv[1][i]);
+        }
+    }
+}
